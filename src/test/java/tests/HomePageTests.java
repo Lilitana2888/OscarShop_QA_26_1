@@ -9,8 +9,8 @@ import pages.ProductPage;
 
 public class HomePageTests extends TestBase{
 
-    HomePage homepage;
-    ProductPage productPage;
+    public HomePage homepage;
+    public ProductPage productPage;
     @BeforeMethod
     public void pageInit()
     {
