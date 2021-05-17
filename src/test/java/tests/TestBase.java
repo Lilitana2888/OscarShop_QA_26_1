@@ -11,7 +11,7 @@ public class TestBase {
 
     WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void init(){
 
         driver = new ChromeDriver();
@@ -21,7 +21,7 @@ public class TestBase {
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown()
     {
         driver.quit();
