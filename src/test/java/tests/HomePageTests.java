@@ -17,7 +17,7 @@ public class HomePageTests extends TestBase{
         homepage = PageFactory.initElements(driver,HomePage.class);
         productPage = PageFactory.initElements(driver,ProductPage.class);
     }
-    @Test(groups = "smoke")
+    @Test(groups = "smoke")//run test by group
     public void userCanSelectProductInMenuTest()
     {
         homepage.selectCategory();
